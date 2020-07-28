@@ -4,22 +4,20 @@ import java.util.Scanner;
 
 public class NumberNine {
     public static void main(String[] args) {
-        CountCharacter Words = new CountCharacter();
-        String hitungs = "ilmiah";
-        System.out.println(Words.Words(hitungs));
+
+        System.out.println("===Number 9===");
+        System.out.print("Masukkan sebuah kata/kalimat:");
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine();
+        System.out.println("Length of a String is: " + CountCharacter(str));
     }
 
-    public static class CountCharacter{
-        private String Words(String hitungs) {
-            Scanner scan = new Scanner(System.in);
-            System.out.println("===Number 9===");
-            System.out.print("Masukkan sebuah kata/kalimat: ");
-            String str = scan.nextLine();
+    public static int CountCharacter(String hitungs) {
 
-            int length = str.length();
-            System.out.println("Length of a String is: " + length);
-
-            return str;
+        int i = 0;
+        for (char c : hitungs.toCharArray()) {
+            i++;
         }
+        return i;
     }
 }

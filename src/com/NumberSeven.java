@@ -8,7 +8,7 @@ public class NumberSeven {
     public static void main(String[] args) {
         List<Integer> kabisat = IntStream.rangeClosed(2000, 2020)
                 .boxed().collect(Collectors.toList());
-
+        System.out.println("==Number 7==");
         kabisat.stream().forEach(new TahunKabisat()::get);
     }
 

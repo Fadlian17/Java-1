@@ -8,7 +8,7 @@ public class NumberSix {
     public static void main(String[] args) {
         List<Integer> range = IntStream.rangeClosed(1,200)
                 .boxed().collect(Collectors.toList());
-
+        System.out.println("==Number 6==");
         range.forEach(new GanjilGenap()::check);
 
     }

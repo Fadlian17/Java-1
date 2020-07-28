@@ -8,7 +8,7 @@ public class NumberTen {
         var s1 = List.of(3,1,7,4,5,6,8,2);
         var s2 = List.of(8,7,2,8,2,6);
 
-
+        System.out.println("==Number 10==");
         System.out.println(Slice.get(s1,s2));
     }
 
